@@ -398,14 +398,89 @@ header{
 }
 /*Banner css end*/
 
-
+.show-on{
+    display: none;
+}
 
 
 /*Media qurey start*/
 @media (max-width: 1024px) {
 
 }
-@media (max-width: 959px) {
+@media (max-width: 990px) {
+.show-on{
+    display: block;
+}
+.hide-on{
+    display: none;
+}
+.logo {
+    margin: 0;
+    height: 72px;
+}
+.logo a {
+    float: left;
+    padding-top: 10px;
+    width: 60px;
+    overflow: hidden;
+}
+.responsive-menu-icon{
+    float: right;
+    height: 100%;
+}
+.responsive-menu-icon a{
+    background: #fff;
+    display: inline-block;
+    height: 100%;
+    line-height: 72px;
+    width: auto;
+    font-size: 30px;
+    padding: 20px 15px;
+    color: #247c26;
+}
+.responsive-menu-icon a ng-md-icon {
+    height: auto;
+    width: auto;
+}
+
+.nav-section {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 72px;
+    width: 100%;
+}
+.nav-section nav {
+    background: #fff none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 72px;
+    width: 280px;
+}
+.top-nav ul{
+    padding: 0;
+    margin: 0;
+}
+.top-nav ul li {
+    display: block;
+    float: none;
+    height: auto;
+}
+.top-nav ul li a {
+    background: #eee;
+    border-bottom: 1px solid #fff;
+    padding: 20px;
+    color: #000;
+    text-align: left;
+}
+
+
 
 }
 @media (max-width: 769px) {
