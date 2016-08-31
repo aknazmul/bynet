@@ -91,6 +91,9 @@ p{
 .margin-bottom-0{
     margin-bottom: 0;
 }
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
 .margin-bottom-40{
     margin-bottom: 40px;
 }
@@ -121,7 +124,7 @@ p{
 }
 .primary-button-onBlack:hover{
     background: rgba(255, 255, 255, 0.7); 
-    color: #247c26;
+    color: #247c26!important;
 }
 .transparent-button{
     background: rgba(36, 124, 38, 0.7);
@@ -225,6 +228,19 @@ header{
 .about-us-image img{
     width: 100%;
 }
+#pageTitle{
+    background: url(../img/binate-page-title-bg.jpg) repeat bottom center;
+    background-size: cover;
+}
+.page-title-inner {
+    padding: 120px 0 30px 0;
+}
+.page-title-inner h3{
+    color: #fff;
+}
+.transperent-bg{
+    background: rgba(0, 0, 0, 0.7);
+}
 #services{
     background: rgba(0, 0, 0, 0) url("../img/parallax-02.jpg") repeat fixed;
     background-size: cover;
@@ -232,6 +248,15 @@ header{
 }
 .services-item{
     text-align: center;
+    padding: 20px 15px;
+    overflow: hidden;
+    height: 305px;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .services-item p a{
     color: #fff;
@@ -243,32 +268,74 @@ header{
     background: rgba(255, 255, 255, 0.1);
     font-size: 35px;
     color: #fff;
-    height: 100px;
+    height: 80px;
     border: 1px solid #fff;
-    width: 100px;
+    width: 80px;
     border-radius: 100%;
     margin: 20px auto;
     
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .service-icon i {
-    line-height: 100px;
+    line-height: 80px;
 }
 .services-item:hover .service-icon{ 
-    background: rgba(36, 124, 38, 0.5); 
+    background: rgba(36, 124, 38, 0.6); 
     cursor: pointer; 
     color: #fff;
     border: 1px solid #247c26;
+    margin-top: -10px; 
+     
 
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}  
+.services-item:hover .service-content-static{
+    display: none;
+}
+.service-content{
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    left: 0;
+    top: 100%;
+    height: 100%;
+
+     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.service-content h6{
+    font-size: 20px;
+    color: #fff;
+} 
+.services-item:hover .service-content{
+   top: 90px;
+   height: 100%;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.services-item:hover{
+    background: rgba(36, 124, 38, 0.3); 
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 #career{
     background: rgba(0, 0, 0, 0) url("../img/thumb-image-05.jpg") no-repeat bottom right; 
@@ -307,6 +374,33 @@ header{
 .phone-number i{
     font-size: 60px;
 }
+.job-item{
+    padding: 20px;
+    background: #f7f8f7;
+    border: 1px solid #ddd;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.job-item:hover{ 
+    background: #dff4df;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.job-item h6 a{
+    color: #247c26;
+}
+.job-item h6 a:hover{
+    color: #2b9d2e;
+}
+
+
 /*Footer css start*/
 .footer-first{
     background: rgba(0, 0, 0, 0.8);
