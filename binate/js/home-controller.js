@@ -7,18 +7,18 @@ app.controller('homeController', [ '$rootScope', '$document', '$scope', function
 	$scope.bannerImages = [
       {
         img: "img/binate-banner-01.jpg",
-        title1: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+        title1: "Entering a new era of transformations, we refocus energies towards ‘Creating memorable digital experiences everyday’ for our customers. ",
 		captionAlign:"right-align"
       },
 			{
         img: "img/binate-banner-02.jpg",
-        title1: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ",
+        title1: "Our clients’ priorities drive our business focus. They depend on Binate's industry knowledge to help  solve the toughest of problems. For us, “good enough” is not enough.",
 		captionAlign:"right-align"
       },
 			{
         img: "img/binate-banner-03.jpg",
-        title1: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-				captionAlign:"left-align"
+        title1: "we can deliver 25% efficiency gains in the first 12 to 18 months of a client relationship versus waiting for savings in the off years.",
+		captionAlign:"left-align"
       }      
     ];
 

@@ -49,6 +49,15 @@ app.controller('mainCtrl', ['$rootScope', 'ngDialog', '$document', '$timeout', '
             className: 'ngdialog-theme-default'
         });
     };
+
+    //Project details
+    $scope.teamqueryModal = function () {
+        ngDialog.open({
+            template: 'queryModal',
+            controller: 'InsideCtrl',
+            className: 'ngdialog-theme-default'
+        });
+    };
   
 }]);
 

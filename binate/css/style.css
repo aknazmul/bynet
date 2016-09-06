@@ -414,6 +414,58 @@ header{
 .job-item h6 a:hover{
     color: #2b9d2e;
 }
+.custom-field {
+    height: 40px;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.custom-field:focus {
+    border-color: #247c26;
+    box-shadow: none;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.custom-textarea{
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 150px;
+}
+.custom-textarea:focus {
+    border-color: #247c26;
+    box-shadow: none;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.width-block{
+    width: 100%;
+}
+.field-row {
+    margin-bottom: 20px;
+    clear: both;
+    overflow: hidden;
+}
+.check-boxarea label{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+}
 
 
 /*Footer css start*/
