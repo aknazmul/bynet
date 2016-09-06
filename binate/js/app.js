@@ -1,4 +1,8 @@
 
-var app = angular.module('ngApp', ['angular-parallax', 'duScroll', 'angular-scroll-animate', 
+var app = angular.module('ngApp', ['angular-parallax','ngDialog', 'duScroll', 'angular-scroll-animate', 
                                     'ngMdIcons', 'ngAnimate', 'angular-carousel', 'matchMedia']);
 
+//Page scroll
+    app.value('duScrollDuration', 800)
+    app.value('duScrollBottomSpy', true);
+    app.value('duScrollOffset', 30);

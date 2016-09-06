@@ -56,19 +56,19 @@
                     <nav>
                         <div class="top-nav animated fadeIn">
                             <ul>
-                                <li><a ng-click="isShow = !isShow" href="#video-banner" du-smooth-scroll du-scrollspy
+                                <li><a ng-click="isShow = !isShow" href="#video-banner" du-smooth-scroll du-scrollspy duration="1500"
                                         offset="70" alt="Home" title="Home">Home</a>
                                 </li>
-                                <li><a ng-click="isShow = !isShow" href="#about-us" du-smooth-scroll du-scrollspy offset="70"
+                                <li><a ng-click="isShow = !isShow" href="#about-us" du-smooth-scroll du-scrollspy offset="70" duration="1500"
                                         alt="About Us" title="About Us">About Us</a>
                                 </li>
-                                <li><a ng-click="isShow = !isShow" href="#services" du-smooth-scroll du-scrollspy offset="70" alt="Services"
+                                <li><a ng-click="isShow = !isShow" href="#services" du-smooth-scroll du-scrollspy offset="70" duration="500" alt="Services"
                                         title="Services">Services</a>
                                 </li>
-                                <li><a ng-click="isShow = !isShow" href="#career" du-smooth-scroll du-scrollspy offset="70" alt="Career"
+                                <li><a ng-click="isShow = !isShow" href="#career" du-smooth-scroll du-scrollspy offset="70" duration="1500" alt="Career"
                                         title="Career">Career</a>
                                 </li>
-                                <li><a ng-click="isShow = !isShow" href="#address-section" du-smooth-scroll du-scrollspy alt="Contact"
+                                <li><a ng-click="isShow = !isShow" href="#address-section" du-smooth-scroll du-scrollspy  duration="1500" alt="Contact"
                                         title="Contact">Contact</a>
                                 </li>
                             </ul>
@@ -84,13 +84,16 @@
             <section id="video-banner">
                 <article>
                     <video autoplay="true" loop="loop" muted="muted" volume="0"> 
-                        <source src="img/06-2.mp4" type="video/mp4"> 
+                        <source src="img/intro.mp4" type="video/mp4"> 
                     </video>
                     <div class="overlay-dotted"></div>
                     <div class="container">
                         <div class="col-md-12 video-banner-caption">
                             <h2 class="animated zoomIn" >
-                                <span class="heading-04">Some slogun content goes here about</span> <br> <span class="heading-01">binate-solutions.com</span>
+                                <span class="heading-04 primary-color">
+                                    Better comes with a smile. 
+                                </span>
+                                <br> <span class="heading-01">binate-solutions.com</span>
                             </h2>
                             <a  href="" class="transparent-button">Get Start</a>
                         </div>
@@ -130,7 +133,7 @@
                                 <p class="service-desc">
                                     <a href="">It is a long established fact that. It is a long established fact that a reader will be distracted by the readable content of a page when.</a>
                                 </p>
-                                <a href="" class="primary-button primary-button-onBlack">Details</a>
+                                <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
                             </div>
                         </div>
                         <div class="col-md-3 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
@@ -145,7 +148,7 @@
                                 <p class="service-desc">
                                     <a href="">Amazing new frustration. New infer anger or amazing new frustration. The color red can infer amazing new frustration.</a>
                                 </p>
-                                <a href="" class="primary-button primary-button-onBlack">Details</a>
+                                <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
                             </div>
                         </div>
                         <div class="col-md-3 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
@@ -160,7 +163,7 @@
                                 <p class="service-desc">
                                     <a href="">Color red can infer anger or amazing new frustration. amazing new The color red can infer anger or new frustration.</a>
                                 </p>
-                                <a href="" class="primary-button primary-button-onBlack">Details</a>
+                                <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
                             </div>
                         </div>
                         <div class="col-md-3 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
@@ -175,9 +178,20 @@
                                 <p class="service-desc">
                                     <a href="">The color red can infer anger or amazing new frustration frustration. The color red can amazing new frustration.</a>
                                 </p>
-                                <a href="" class="primary-button primary-button-onBlack">Details</a>
+                                <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
                             </div>
                         </div>
+ 
+                        <!-- Templates -->
+                        <script type="text/ng-template" id="projectDetailsModal">
+                            <div class="dialog_header">
+                                <h2>Search get the right people</h2>
+                            </div>
+                            <div class="dialog-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                            </div>
+                        </script>
+                        <!-- Templates -->
                     </div>
                 </article>
             </section>
@@ -278,11 +292,12 @@
     <script type="text/javascript" src="js/home-controller.js"></script>
     <script type="text/javascript" src="js/angular-parallax.js"></script>
     <script type="text/javascript" src="js/angular-scroll.js"></script>
+    <script type="text/javascript" src="js/ngDialog.js"></script>
     <script type="text/javascript" src="js/angular-scroll-animate.js"></script>
     <script type="text/javascript" src="js/angular-material-icons.js"></script>
     <script type="text/javascript" src="js/angular-touch.js"></script>
     <script type="text/javascript" src="js/angular-carousel.js"></script>
-    <script type="text/javascript" src="js/match-media.js"></script>
+    <script type="text/javascript" src="js/match-media.js"></script> 
 
 </body>
 

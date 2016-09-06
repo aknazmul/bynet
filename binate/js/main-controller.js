@@ -1,12 +1,7 @@
 'use strict';
 
-app.controller('mainCtrl', ['$rootScope', '$document', '$timeout', '$scope', 'screenSize', function ($rootScope, $document, $timeout, $scope, screenSize) {
+app.controller('mainCtrl', ['$rootScope', 'ngDialog', '$document', '$timeout', '$scope', 'screenSize', function ($rootScope, ngDialog, $document, $timeout, $scope, screenSize) {
  
-//Page scroll
-    app.value('duScrollDuration', 800)
-    app.value('duScrollBottomSpy', true);
-    app.value('duScrollOffset', 30);
-
 
 //Mobile screenSize
     $scope.isShow = false;
@@ -17,4 +12,68 @@ app.controller('mainCtrl', ['$rootScope', '$document', '$timeout', '$scope', 'sc
 
     console.log($scope.isMobile);
 
+
+
+
+    
+    $rootScope.jsonData = '{"foo": "bar"}';
+    $rootScope.theme = 'ngdialog-theme-default';
+
+    $scope.directivePreCloseCallback = function (value) {
+        if (confirm('Close it? MainCtrl.Directive. (Value = ' + value + ')')) {
+            return true;
+        }
+        return false;
+    };
+
+    $scope.preCloseCallbackOnScope = function (value) {
+        if (confirm('Close it? MainCtrl.OnScope (Value = ' + value + ')')) {
+            return true;
+        }
+        return false;
+    };
+
+    $scope.open = function () {
+        var new_dialog = ngDialog.open({ id: 'fromAService', template: 'firstDialogId', controller: 'InsideCtrl', data: { foo: 'from a service' } });
+        // example on checking whether created `new_dialog` is open
+        $timeout(function () {
+            console.log(ngDialog.isOpen(new_dialog.id));
+        }, 2000)
+    };
+ 
+    //Project details
+    $scope.projectDetails = function () {
+        ngDialog.open({
+            template: 'projectDetailsModal',
+            controller: 'InsideCtrl',
+            className: 'ngdialog-theme-default'
+        });
+    };
+  
 }]);
+
+
+app.controller('InsideCtrl', function ($scope, ngDialog) {
+    $scope.dialogModel = {
+        message: 'message from passed scope'
+    };
+    $scope.openSecond = function () {
+        ngDialog.open({
+            template: '<h3><a href="" ng-click="closeSecond()">Close all by click here!</a></h3>',
+            plain: true,
+            closeByEscape: false,
+            controller: 'SecondModalCtrl'
+        });
+    };
+});
+
+app.controller('InsideCtrlAs', function () {
+    this.value = 'value from controller';
+});
+
+app.controller('SecondModalCtrl', function ($scope, ngDialog) {
+    $scope.closeSecond = function () {
+        ngDialog.close();
+    };
+});
+
