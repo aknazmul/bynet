@@ -41,10 +41,28 @@ app.controller('mainCtrl', ['$rootScope', 'ngDialog', '$document', '$timeout', '
         }, 2000)
     };
  
-    //Project details
-    $scope.projectDetails = function () {
+    //Service details
+    $scope.agileDetails = function () {
         ngDialog.open({
-            template: 'projectDetailsModal',
+            template: 'agileDetailsId',
+            controller: 'InsideCtrl',
+            className: 'ngdialog-theme-default'
+        });
+    };
+
+    //Service details
+    $scope.lowCostDetails = function () {
+        ngDialog.open({
+            template: 'lowDetailsId',
+            controller: 'InsideCtrl',
+            className: 'ngdialog-theme-default'
+        });
+    };
+
+    //Service details
+    $scope.yourControllDetails = function () {
+        ngDialog.open({
+            template: 'yourControllDetailsId',
             controller: 'InsideCtrl',
             className: 'ngdialog-theme-default'
         });

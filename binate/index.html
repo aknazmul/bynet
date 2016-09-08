@@ -75,15 +75,14 @@
             <section id="video-banner">
                 <article>
                     <video autoplay="true" loop="loop" muted="muted" volume="0"> 
-                        <source src="img/business-01.mp4" type="video/mp4"> 
-                        <!--<source src="img/000002.mp4" type="video/mp4"> -->
+                        <source src="img/business-intro.mp4" type="video/mp4">  
                     </video>
                     <div class="overlay-dotted"></div>
                     <div class="container">
                         <div class="col-md-12 video-banner-caption">
                             <h2 class="animated zoomIn" >
                                 <span class="heading-04">
-                                    Better comes with a smile. 
+                                    Building excellent software in an agile way. Top class proactive developers. You're fully in control. 
                                 </span>
                                 <br> <span class="heading-01">binate-solutions.com</span>
                             </h2>
@@ -121,71 +120,113 @@
             <section id="services" class="padding-50-0" parallax-background parallax-ratio="0.5">
                 <article>
                     <div class="container color-white service-section">
-                        <h3 class="heading-02 center-align margin-bottom-40">We have below <span>Services</span> for your business.</h3>
+                        <h3 class="heading-02 center-align margin-bottom-40">We offer the below way</h3>
 
-                        <div ng-repeat="service in services" class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
-                            <div class="service-icon"><i class="li {{ service.icon }}"></i></div>
+                        <div class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
+                            <div class="service-icon"><i class="li li-target"></i></div>
                             <div class="service-content-static">
-                                <p class="margin-bottom-0 primary-color"><strong>{{ service.name }}</strong></p>
+                                <p class="margin-bottom-0 primary-color"><strong>Agile process</strong></p>
                                 <p class="service-desc">
-                                    <a href="">{{ service.description | limitTo: 80 }}...</a>
+                                    <a href="">We follow the Agile method for software development and Scrum as process framework for agile development...</a>
                                 </p>
                             </div>
                             <div class="service-content"> 
                                 <p class="service-desc">
-                                    <a href="">{{ service.description | limitTo:120 }}...</a>
+                                    <a href="">We follow the Agile method for software development and Scrum as process framework for agile development...</a>
                                 </p>
-                                <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
+                                <a href="javascript:void(0)" ng-click="agileDetails()" class="primary-button primary-button-onBlack">Details</a>
                             </div>
-                        </div> 
- 
+                        </div>
+
                         <!-- Templates -->
-                        <script type="text/ng-template" id="projectDetailsModal">
+                        <script type="text/ng-template" id="agileDetailsId">
                             <div class="dialog_header">
-                                <h2>Search get the right people</h2>
+                                <h2>Agile process</h2>
                             </div>
                             <div class="dialog-content">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                                <p>We follow the Agile method for software development and Scrum as process framework for agile development. As we know a “process framework” is a particular set of practices that must be followed in order for a process to be consistent with the framework. So we use sprints as a process. </p> 
+                                <div class="dialog-list">
+                                   <ul>
+                                        <li>Manage / refine backlogs [through backlog refinement meeting]:</li>
+                                        <li>Sprint planning:</li>
+                                        <li>Sprint Duration:</li>
+                                        <li>Sprint retrospective:</li>
+                                        <li>Sprint kickoff:</li>
+                                        <li>Daily stand-up:</li>
+                                        <li>Sprint Review Meeting:</li> 
+                                    </ul>    
+                                </div>
+                                <p>In our Scrum idea, all the following three roles are being played properly:</p>
+                                <div class="dialog-list list-style-none">
+                                   <ul>
+                                        <li><strong>1.</strong>	Product Owner</li>
+                                        <li><strong>2.</strong>	Scrum Master</li>
+                                        <li><strong>3.</strong>	Scrum Team</li>
+                                    </ul>    
+                                </div>
                             </div>
                         </script>
                         <!-- Templates -->
-                    </div>
-                </article>
-            </section>
-            
-            <section id="career">
-                <article>
-                    <div class="container">
-                        <div class="col-md-6 career-content"> 
-                            <h3 class="heading-03">Few <span class="primary-color">Positons</span></h3>
-                            <p>At Binate, one of our values is to "Grow As a Team." It's in our DNA to prioritize teamwork and develop our people. By working together, we achieve great things for clients and create opportunities to build rewarding careers. You can be part of that when you join our team. And it's all at your fingertips!</p> 
-                            <a  href="career.html" class="primary-button">View Positons</a>
-                        </div>
-                        <div class="col-md-6 career-images"> 
-                            &nbsp;
-                        </div>
-                    </div>
-                </article>
-            </section>
 
-            <section class="white-section light-blue-bg">
-                <article>
-                    <div class="banner-section">
-                        <ul rn-carousel rn-carousel-auto-slide rn-carousel-index="carouselIndex" rn-carousel-duration="500"
-                            rn-carousel-controls-allow-loop rn-carousel-pause-on-hover>
-                            <li ng-repeat="bannerCap in bannerImages">
-                                <div class="banner-content" layout layout-align="center center" ng-style="{'background-image': 'url(' + bannerCap.img + ')'}">
-                                    <div class="banner-caption ">
-                                        <p class="caption-text margin-bottom-30 {{bannerCap.captionAlign}}">{{bannerCap.title1}}</p>
-                                        <a  href="" class="primary-button primary-button-onBlack">Start hire</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div rn-carousel-indicators ng-if="bannerImages.length > 1" slides="bannerImages" rn-carousel-index="carouselIndex" class="custom-indicator"></div>
+                        <div class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
+                            <div class="service-icon"><i class="li li-paper-plane"></i></div>
+                            <div class="service-content-static">
+                                <p class="margin-bottom-0 primary-color"><strong>low Cost</strong></p>
+                                <p class="service-desc">
+                                    <a href="">Binate offers one of the lowest costs in the world. As a result, our honourable clients can avail world class...</a>
+                                </p>
+                            </div>
+                            <div class="service-content"> 
+                                <p class="service-desc">
+                                    <a href="">Binate offers one of the lowest costs in the world. As a result, our honourable clients can avail world class...</a>
+                                </p>
+                                <a href="javascript:void(0)" ng-click="lowCostDetails()" class="primary-button primary-button-onBlack">Details</a>
+                            </div>
+                        </div>
+
+                        <!-- Templates -->
+                        <script type="text/ng-template" id="lowDetailsId">
+                            <div class="dialog_header">
+                                <h2>Low Cost</h2>
+                            </div>
+                            <div class="dialog-content">
+                                <p>Binate offers one of the lowest costs in the world. As a result, our honourable clients can avail world class services with retaining all valuable employees. No need to worry about losing their precious assets.</p> 
+                            </div>
+                        </script>
+                        <!-- Templates -->
+
+                        <div class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
+                            <div class="service-icon"><i class="li li-graph"></i></div>
+                            <div class="service-content-static">
+                                <p class="margin-bottom-0 primary-color"><strong>Your Control</strong></p>
+                                <p class="service-desc">
+                                    <a href="">With Binate Solutions you have your own people that are working exclusively for you. It's your work,...</a>
+                                </p>
+                            </div>
+                            <div class="service-content"> 
+                                <p class="service-desc">
+                                    <a href="">With Binate Solutions you have your own people that are working exclusively for you. It's your work,...</a>
+                                </p>
+                                <a href="javascript:void(0)" ng-click="yourControllDetails()" class="primary-button primary-button-onBlack">Details</a>
+                            </div>
+                        </div> 
+
+                        <!-- Templates -->
+                        <script type="text/ng-template" id="yourControllDetailsId">
+                            <div class="dialog_header">
+                                <h2>Your Control</h2>
+                            </div>
+                            <div class="dialog-content">
+                                <p>With Binate Solutions you have your own people that are working exclusively for you. It's your work, your team hence your instruction.</p>
+                                
+                            </div>
+                        </script>
+                        <!-- Templates -->
+
+
                     </div>
                 </article>
-            </section> 
+            </section>
 
 
             <section id="hierUs" class="padding-50-0">
@@ -193,8 +234,8 @@
                     <div class="container terms-n-condition">
 
                         <div class="col-md-12 center-align"> 
-                            <h3 class="heading-03 margin-bottom-40">Build <span class="primary-color">Team </span> With Us</h3>
-                            <p class="heading-05 margin-bottom-40">For prices for team management, project management and functional design <br>please contact us for more information. </p> 
+                            <h3 class="heading-03 margin-bottom-40">Build <span class="primary-color">team</span> with us</h3>
+                            <p class="heading-05 margin-bottom-40">For prices of team management, project management and functional design <br>please contact us for more information. </p> 
                             <a  href="" ng-click="teamqueryModal()" class="primary-button">Make a Team</a>
                         </div>  
                         <!-- Templates -->
@@ -254,7 +295,42 @@
 
                     </div>
                 </article>
+            </section> 
+
+            <section class="white-section light-blue-bg">
+                <article>
+                    <div class="banner-section">
+                        <ul rn-carousel rn-carousel-auto-slide rn-carousel-index="carouselIndex" rn-carousel-duration="500"
+                            rn-carousel-controls-allow-loop rn-carousel-pause-on-hover>
+                            <li ng-repeat="bannerCap in bannerImages">
+                                <div class="banner-content" layout layout-align="center center" ng-style="{'background-image': 'url(' + bannerCap.img + ')'}">
+                                    <div class="banner-caption ">
+                                        <p class="caption-text margin-bottom-30 {{bannerCap.captionAlign}}">{{bannerCap.title1}}</p>
+                                        <a  href="" class="primary-button primary-button-onBlack">Start hire</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div rn-carousel-indicators ng-if="bannerImages.length > 1" slides="bannerImages" rn-carousel-index="carouselIndex" class="custom-indicator"></div>
+                    </div>
+                </article>
+            </section> 
+
+            <section id="career">
+                <article>
+                    <div class="container">
+                        <div class="col-md-6 career-content"> 
+                            <h3 class="heading-03">Careers in <span class="primary-color">Binate </span></h3>
+                            <p>At Binate, one of our values is to "Grow As a Team." It's in our DNA to prioritize teamwork and develop our people. By working together, we achieve great things for clients and create opportunities to build rewarding careers. You can be part of that when you join our team. And it's all at your fingertips!</p> 
+                            <a  href="career.html" class="primary-button">View Positons</a>
+                        </div>
+                        <div class="col-md-6 career-images"> 
+                            &nbsp;
+                        </div>
+                    </div>
+                </article>
             </section>
+            
              
         </div>
         <!--Body container end--> 

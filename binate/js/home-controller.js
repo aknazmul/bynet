@@ -40,7 +40,7 @@ app.controller('homeController', [ '$rootScope', '$document', '$scope', function
 			id: 3,
 			icon: "li-graph",
 			name: "Your Controll",
-			description: "Color red can infer anger or amazing new frustration. amazing new The color red can infer anger or new frustration. Color red can infer anger or amazing new frustration. amazing new The color red can infer anger or new frustration."
+			description: "With Binate Solutions you have your own people that are working exclusively for you. It's your work, your team hence your instruction."
 		},
 	]
 

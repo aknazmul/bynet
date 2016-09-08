@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ngApp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="somethng kisu ekta">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binate-solution.com : Career</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#15ad08">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+     
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/angular-material-icons.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/line-icons.css" />
+    <link rel="stylesheet" href="css/angular-carousel.css" />
+
+</head>
+
+<body>
+    <div class="wrapper" ng-controller="mainCtrl">
+        <!--Header start-->
+        <header>
+            <div class="container">
+                <div class="col-md-4 logo"> 
+                    <a href="index.html"><img src="img/logo.png" alt="IT-Button" title="IT-Button" /></a> 
+                    <div class="responsive-menu-icon show-on">
+                        <a href="javascript:void(0)" ng-click="isShow = !isShow">
+                            <ng-md-icon icon="menu" size="34" ng-hide="isShow" class="animated fadeIn"></ng-md-icon> 
+                            <ng-md-icon icon="close" size="34" ng-show="isShow" class="animated fadeIn"></ng-md-icon>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div> 
+                <div class="col-md-8 pull-right nav-section" ng-show="!isMobile || isShow" ng-click="isShow = !isShow">
+                    <nav>
+                        <div class="top-nav animated fadeIn">
+                            <ul>
+                                <li><a ng-click="isShow = !isShow" href="index.html#video-banner" du-smooth-scroll du-scrollspy
+                                        offset="70" alt="Home" title="Home">Home</a>
+                                </li>
+                                <li><a ng-click="isShow = !isShow" href="index.html#about-us" du-smooth-scroll du-scrollspy offset="70"
+                                        alt="About Us" title="About Us">About Us</a>
+                                </li>
+                                <li><a ng-click="isShow = !isShow" href="index.html#services" du-smooth-scroll du-scrollspy offset="70" alt="Services"
+                                        title="Services">Services</a>
+                                </li>
+                                <li><a ng-click="isShow = !isShow" href="index.html#career" du-smooth-scroll du-scrollspy offset="70" alt="Career"
+                                        title="Career">Career</a>
+                                </li>
+                                <li><a ng-click="isShow = !isShow" href="index.html#address-section" du-smooth-scroll du-scrollspy alt="Contact"
+                                        title="Contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--Header end-->
+
+        <!--Body container start-->
+        <div class="body-container" ng-controller="careerController">
+              
+
+            <section id="pageTitle">
+                <article class="transperent-bg">
+                    <div class="container page-title-inner">
+                        <div class="col-md-12 center-align"> 
+                            <h3 class="heading-03 margin-bottom-40">QA/ Software Developer</h3> 
+                        </div> 
+                    </div>
+                </article>
+            </section>
+
+            <section id="hierUs" class="padding-50-0">
+                <article>
+                    <div class="container">
+                        <div class="col-md-12"> 
+                             <h5 class="heading-05">Company/Organization: <span class="primary-color"> Binate Solutions.</span></h5>
+                             <h5 class="heading-05">No. of Vacancies: <span class="primary-color"> 2</span></h5>
+                             <h5 class="heading-05">Job Description / Responsibility</h5>
+                             <div class="custom-list">
+                                 <ul>
+                                     <li>We're looking for a Software Engineer (QA) to join our core team.</li>
+                                     <li>Write extensive unit test covering corner cases</li>
+                                     <li>Need depth Knowledge in Python/Ruby/Javascript/Java</li>
+                                     <li>Experiences in creating unit test (unititest, nose, or any other unit testing tools used in the backend)</li>
+                                     <li>Experiences in creating web app using Django/Rails/Groovy/Spring/.Net</li>
+                                     <li>Experience creating and maintaining automated regression tests applications.</li>
+                                     <li>Experienced with GIThub or other source code versioning tool</li>
+                                     <li>Lead, mentor and guide teams</li>
+                                     <li>Minimize build failures by better toolset and process.</li>
+                                     <li>Taking part in the responsibility for consistently delivery high-quality software products</li>
+                                     <li>Working with scripting languages (bash, Python, Ruby, Perl, PowerShell, Golang, etc.) is a plus.</li> 
+                                 </ul>
+                             </div>
+                             <h5 class="heading-05">Job Nature: <span class="primary-color">Full-time</span></h5>
+                             <h5 class="heading-05">Educational Requirements</h5>
+                             <p>We are looking for a smart developer, eager to work in an international environment.</p>
+                             <h5 class="heading-05">Experience Requirements: <span class="primary-color">At least 2 year(s)</span></h5>
+                             <h5 class="heading-05">Additional Job Requirements</h5>
+                             <div class="custom-list">
+                                 <ul>
+                                     <li>Good English communication skills;</li>
+                                     <li>Rock solid skills in programming, specially Backend Development</li>
+                                     <li>Experience with a version control system (preferably Git);</li>
+                                     <li>Experience with testing and debugging live systems</li>
+                                     <li>At least 2 years experience as web developer.</li>
+                                     <li>Strong experience in  Linux environment</li>
+                                     <li>Strong communication skills (verbal and written) and teamwork skills </li>
+                                 </ul>
+                             </div>
+                             <h5 class="heading-05">Job Location: <span class="primary-color">Dhaka </span></h5>
+                             <h5 class="heading-05">Other Benefits</h5>
+                             <div class="custom-list">
+                                 <ul>
+                                     <li>Salary Range: Commensurate with experience and track record</li>
+                                     <li>Other Benefits: </li>
+                                     <li>Compensation package will be competitive, and commensurate with experience and track record</li>
+                                     <li>Provident Fund facility</li>
+                                     <li>Festive Bonus</li>
+                                     <li>Lunch & Refreshment facility </li>
+                                     <li>Lots of trainings and courses on our expense !!</li>
+                                     <li>Salary review in each 6 months with performance. </li> 
+                                 </ul>
+                             </div>
+                             <h5 class="heading-05">Job Level: <span class="primary-color">Mid to Sr. Level Job </span></h5>
+                        </div> 
+                    </div>
+                </article>
+            </section>
+             
+        </div>
+        <!--Body container end--> 
+
+        <!--Footer start-->
+        <footer id="address-section" parallax-background parallax-ratio="0.5">
+            
+            <section class="padding-50-0">
+                <article>
+                    <div class="container">
+                        <div class="col-md-6 binate-address"> 
+                            <p class="address">
+                                House-1148 (1st, 3rd, & 4th floor)<br>
+                                Road 9A(Old-48), Mirpur DOHS, Dhaka-1216<br>
+                                Bangladesh
+                            </p> 
+                        </div>
+                        <div class="col-md-6 binate-address"> 
+                            <div class="address-logo">
+                                <img src="img/logo-without-text.png" alt="Globe" title="Binate Solutions" /> 
+                            </div> 
+                            <p class="phone-number"><i class="fa fa-mobile" aria-hidden="true"></i> +880 196 280 0429</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            
+            <div class="footer-first">
+                <div class="container">
+                    <div class="col-md-5 copy-right pull-left">
+                        <p class="margin-bottom-0">Copyright &copy; 2016, - Binate Solutions</p>
+                    </div>
+                    <div class="col-md-3 social-icons pull-right"> 
+                        <a href="https://www.linkedin.com/company/BinateSolutions" target="_blank" alt="linkedin" title="linkedin" class="fa fa-linkedin"></a>
+                        <a href="https://www.facebook.com/BinateSolutions" target="_blank" alt="Facebook" title="Facebook" class="fa fa-facebook"></a>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+        <!--Footer start-->
+    </div>
+
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/angular-animate.js"></script>
+    <script type="text/javascript" src="js/main-controller.js"></script>
+    <script type="text/javascript" src="js/home-controller.js"></script>
+    <script type="text/javascript" src="js/angular-parallax.js"></script>
+    <script type="text/javascript" src="js/angular-scroll.js"></script>
+    <script type="text/javascript" src="js/ngDialog.js"></script>
+    <script type="text/javascript" src="js/angular-scroll-animate.js"></script>
+    <script type="text/javascript" src="js/angular-material-icons.js"></script>
+    <script type="text/javascript" src="js/angular-touch.js"></script>
+    <script type="text/javascript" src="js/angular-carousel.js"></script>
+    <script type="text/javascript" src="js/match-media.js"></script> 
+    <script type="text/javascript" src="js/career-controller.js"></script> 
+
+</body>
+
+</html>
