@@ -80,7 +80,7 @@
         <!--Header end-->
 
         <!--Body container start-->
-        <div class="body-container" ng-controller="homeController">
+        <div class="body-container" ng-controller="careerController">
               
 
             <section id="pageTitle">
@@ -97,33 +97,15 @@
                 <article>
                     <div class="container">
                         <div class="col-md-12"> 
-                            <div class="job-item margin-bottom-30">
-                                <h6 class="heading-06 primary-color"><a href="">Software Engineer (Android/iOS)</a></h6>
-                                <p class="margin-bottom-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...</p>
+                            <div class="job-item margin-bottom-30" ng-repeat="job in jobCirculars">
+                                <h6 class="heading-06 primary-color"><a href="">{{ job.name }}</a></h6>
+                                <p class="margin-bottom-0">{{ job.description }}...</p>
                                 <div class="job-item-bottom">
-                                    <p class="pull-left margin-bottom-0"><strong class="primary-color">Experience :</strong> 3 to 5 years</p>
-                                    <p class="pull-right margin-bottom-0"><strong class="primary-color">Deadline :</strong> 30 September 2016</p>
+                                    <p class="pull-left margin-bottom-0"><strong class="primary-color">Experience :</strong> {{ job.experience }}</p>
+                                    <p class="pull-right margin-bottom-0"><strong class="primary-color">Deadline :</strong> {{ job.deadline }}</p>
                                 </div>
                                 <div class="clear"></div>
-                            </div>
-                            <div class="job-item margin-bottom-30">
-                                <h6 class="heading-06 primary-color"><a href="">Software Engineer (Python)</a></h6>
-                                <p class="margin-bottom-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...</p>
-                                <div class="job-item-bottom">
-                                    <p class="pull-left margin-bottom-0"><strong class="primary-color">Experience :</strong> 3 to 5 years</p>
-                                    <p class="pull-right margin-bottom-0"><strong class="primary-color">Deadline :</strong> 30 September 2016</p>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="job-item margin-bottom-30">
-                                <h6 class="heading-06 primary-color"><a href="">Software Engineer (AngularJS)</a></h6>
-                                <p class="margin-bottom-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English...</p>
-                                <div class="job-item-bottom">
-                                    <p class="pull-left margin-bottom-0"><strong class="primary-color">Experience :</strong> 3 to 5 years</p>
-                                    <p class="pull-right margin-bottom-0"><strong class="primary-color">Deadline :</strong> 30 September 2016</p>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
+                            </div> 
                         </div> 
                     </div>
                 </article>
@@ -161,9 +143,8 @@
                         <p class="margin-bottom-0">Copyright &copy; 2016, - Binate Solutions</p>
                     </div>
                     <div class="col-md-3 social-icons pull-right"> 
-                        <a href="" target="_blank" alt="linkedin" title="linkedin" class="fa fa-linkedin"></a>
-                        <a href="" target="_blank" alt="youtube" title="youtube" class="fa fa-youtube-play"></a> 
-                        <a href="" target="_blank" alt="youtube" title="youtube" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/company/BinateSolutions" target="_blank" alt="linkedin" title="linkedin" class="fa fa-linkedin"></a>
+                        <a href="https://www.facebook.com/BinateSolutions" target="_blank" alt="Facebook" title="Facebook" class="fa fa-facebook"></a>
                     </div> 
                 </div>
             </div>
@@ -184,6 +165,7 @@
     <script type="text/javascript" src="js/angular-touch.js"></script>
     <script type="text/javascript" src="js/angular-carousel.js"></script>
     <script type="text/javascript" src="js/match-media.js"></script> 
+    <script type="text/javascript" src="js/career-controller.js"></script> 
 
 </body>
 

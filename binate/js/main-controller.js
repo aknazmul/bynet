@@ -50,10 +50,19 @@ app.controller('mainCtrl', ['$rootScope', 'ngDialog', '$document', '$timeout', '
         });
     };
 
-    //Project details
+    //query details
     $scope.teamqueryModal = function () {
         ngDialog.open({
             template: 'queryModal',
+            controller: 'InsideCtrl',
+            className: 'ngdialog-theme-default'
+        });
+    };
+
+    //about us details
+    $scope.aboutDetailsView = function () {
+        ngDialog.open({
+            template: 'aboutDetails',
             controller: 'InsideCtrl',
             className: 'ngdialog-theme-default'
         });
@@ -85,4 +94,3 @@ app.controller('SecondModalCtrl', function ($scope, ngDialog) {
         ngDialog.close();
     };
 });
-

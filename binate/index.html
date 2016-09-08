@@ -18,15 +18,6 @@
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     
-    <!--<link rel="apple-touch-icon" sizes="180x180" href="http://binate-solutions.com/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="http://binate-solutions.com/img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://binate-solutions.com/img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="http://binate-solutions.com/img/favicon/manifest.json">
-    <link rel="mask-icon" href="http://binate-solutions.com/img/favicon/safari-pinned-tab.svg" color="#15ad08">
-    <link rel="shortcut icon" href="http://binate-solutions.com/img/favicon/favicon.ico">
-    <meta name="msapplication-config" content="http://binate-solutions.com/img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">-->
-
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -85,6 +76,7 @@
                 <article>
                     <video autoplay="true" loop="loop" muted="muted" volume="0"> 
                         <source src="img/business-01.mp4" type="video/mp4"> 
+                        <!--<source src="img/000002.mp4" type="video/mp4"> -->
                     </video>
                     <div class="overlay-dotted"></div>
                     <div class="container">
@@ -101,21 +93,27 @@
                 </article>
             </section>
             
-            <section id="about-us" class="padding-50-0" parallax-background parallax-ratio="0.5">
-                <article>
-                    <div class="container">
-                        <div class="col-md-6 about-us-image"> 
-                            <img src="img/thumb-image-01.jpg" alt="Knowledge Sharing" title="Knowledge sharing" />
-                        </div>
-                        <div class="col-md-6 about-us-content"> 
+            <section id="about-us" class="">
+                <article> 
+                    <div class="container-fullwidht">
+                        <div class="col-md-6 about-us-image">&nbsp;</div>
+                        <div class="color-white about-us-content"> 
                             <h4 class="heading-04">About Binate Solutions</h4>
-                            <p>
-                               Businesses today are facing dynamic market conditions: changing consumer behaviour, new technology, and more data than ever before. To keep pace, they have to be more agile and respond more quickly to change. This environment demands more than traditional outsourcing.
-                            </p> 
-                            <p>
-                               To help businesses meet these challenges, operate more effectively and become more competitive, Binate developed own Business Framework. It combined industries experience into a repeatable and scalable methodology. Binate Solutions has fundamentally transformed the way global business process outsourcing should be delivered.
-                            </p>
-                        </div>
+                            <p> Businesses today are facing dynamic market conditions: changing consumer behaviour, new technology, and more data than ever before. To keep pace, they have to be more agile and respond more quickly to change. This environment demands more than traditional outsourcing...</p> 
+                            <p><a href="javascript:void(0)" ng-click="aboutDetailsView()" class="secondary-button-white">Details</a></p>
+                        </div> 
+                        <div class="clear"></div>
+                        <!-- Templates -->
+                        <script type="text/ng-template" id="aboutDetails">
+                            <div class="dialog_header">
+                                <h2>About Binate Solutions</h2>
+                            </div>
+                            <div class="dialog-content">
+                                 <p>Businesses today are facing dynamic market conditions: changing consumer behaviour, new technology, and more data than ever before. To keep pace, they have to be more agile and respond more quickly to change. This environment demands more than traditional outsourcing. </p>  
+                                 <p>To help businesses meet these challenges, operate more effectively and become more competitive, Binate developed own Business Framework. It combined industries experience into a repeatable and scalable methodology. Binate Solutions has fundamentally transformed the way global business process outsourcing should be delivered.</p> 
+                            </div>
+                        </script>
+                        <!-- Templates -->
                     </div>
                 </article>
             </section>
@@ -124,53 +122,22 @@
                 <article>
                     <div class="container color-white service-section">
                         <h3 class="heading-02 center-align margin-bottom-40">We have below <span>Services</span> for your business.</h3>
-                        <div class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
-                            <div class="service-icon"><i class="li li-target"></i></div>
+
+                        <div ng-repeat="service in services" class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
+                            <div class="service-icon"><i class="li {{ service.icon }}"></i></div>
                             <div class="service-content-static">
-                                <p class="margin-bottom-0 primary-color"><strong>Agile process</strong></p>
+                                <p class="margin-bottom-0 primary-color"><strong>{{ service.name }}</strong></p>
                                 <p class="service-desc">
-                                    <a href="">The color red can infer anger or amazing new frustration.</a>
+                                    <a href="">{{ service.description | limitTo: 80 }}...</a>
                                 </p>
                             </div>
                             <div class="service-content"> 
                                 <p class="service-desc">
-                                    <a href="">It is a long established fact that. It is a fact that a reader will be distracted by the readable content of a page when.</a>
+                                    <a href="">{{ service.description | limitTo:120 }}...</a>
                                 </p>
                                 <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
                             </div>
-                        </div>
-
-                        <div class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
-                            <div class="service-icon"><i class="li li-paper-plane"></i></div>
-                            <div class="service-content-static">
-                                <p class="margin-bottom-0 primary-color"><strong>Low Cost</strong></p>
-                                <p>
-                                    <a href="">Emotional icons. For example, the color red can infer anger.</a>
-                                </p>
-                            </div>
-                            <div class="service-content">
-                                <p class="service-desc">
-                                    <a href="">Amazing new frustration. New infer anger or amazing new frustration. The color red can infer amazing new frustration.</a>
-                                </p>
-                                <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 services-item" when-visible="animateElementIn" when-not-visible="animateElementOut">
-                            <div class="service-icon"><i class="li li-graph"></i></div>
-                            <div class="service-content-static">
-                                <p class="margin-bottom-0 primary-color"><strong>Your Controll</strong></p>
-                                <p>
-                                    <a href="">Colors the color red can infer new frustration</a>
-                                </p>
-                            </div>
-                            <div class="service-content"> 
-                                <p class="service-desc">
-                                    <a href="">Color red can infer anger or amazing new frustration. amazing new The color red can infer anger or new frustration.</a>
-                                </p>
-                                <a href="javascript:void(0)" ng-click="projectDetails()" class="primary-button primary-button-onBlack">Details</a>
-                            </div>
-                        </div>
+                        </div> 
  
                         <!-- Templates -->
                         <script type="text/ng-template" id="projectDetailsModal">
@@ -223,13 +190,13 @@
 
             <section id="hierUs" class="padding-50-0">
                 <article>
-                    <div class="container">
+                    <div class="container terms-n-condition">
+
                         <div class="col-md-12 center-align"> 
                             <h3 class="heading-03 margin-bottom-40">Build <span class="primary-color">Team </span> With Us</h3>
                             <p class="heading-05 margin-bottom-40">For prices for team management, project management and functional design <br>please contact us for more information. </p> 
                             <a  href="" ng-click="teamqueryModal()" class="primary-button">Make a Team</a>
-                        </div> 
-
+                        </div>  
                         <!-- Templates -->
                         <script type="text/ng-template" id="queryModal">
                             <div class="dialog_header">
@@ -240,10 +207,20 @@
                             <div class="dialog-content">
                                 <div class="field-row check-boxarea">
                                     <div class="col-md-4">
-                                        <p class="margin-bottom-0"><label><input type="checkbox"> Request for Phone</label></p>
+                                        <p class="margin-bottom-0"> 
+                                            <label class="custom-checkbox custom-checkbox-squire {{ for_phone ? 'selected-pm' : '' }}">
+                                                <span><input type="checkbox" name="Payment option" ng-model="for_phone" /></span>
+                                                <i>Request for Phone</i>
+                                            </label>
+                                        </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <p class="margin-bottom-0"><label><input type="checkbox"> Request for an Email</label></p>
+                                        <p class="margin-bottom-0">
+                                            <label class="custom-checkbox custom-checkbox-squire {{ for_email ? 'selected-pm' : '' }}">
+                                                <span><input type="checkbox" name="Payment option" ng-model="for_email" /></span>
+                                                <i>Request for an Email</i>
+                                            </label>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="field-row">
@@ -311,9 +288,8 @@
                         <p class="margin-bottom-0">Copyright &copy; 2016, - Binate Solutions</p>
                     </div>
                     <div class="col-md-3 social-icons pull-right"> 
-                        <a href="" target="_blank" alt="linkedin" title="linkedin" class="fa fa-linkedin"></a>
-                        <a href="" target="_blank" alt="youtube" title="youtube" class="fa fa-youtube-play"></a> 
-                        <a href="" target="_blank" alt="youtube" title="youtube" class="fa fa-facebook"></a>
+                        <a href="https://www.linkedin.com/company/BinateSolutions" target="_blank" alt="linkedin" title="linkedin" class="fa fa-linkedin"></a>
+                        <a href="https://www.facebook.com/BinateSolutions" target="_blank" alt="Facebook" title="Facebook" class="fa fa-facebook"></a>
                     </div> 
                 </div>
             </div>

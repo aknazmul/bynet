@@ -23,6 +23,27 @@ app.controller('homeController', [ '$rootScope', '$document', '$scope', function
     ];
 
 
+	$scope.services = [
+		{
+			id: 1,
+			icon: "li-target",
+			name: "Agile process",
+			description: "It is a long established fact that. It is a fact that a reader will be distracted by the readable content of a page when.  It is a long established fact that. It is a fact that a reader will be distracted by the readable content of a page when."
+		},
+		{
+			id: 2,
+			icon: "li-paper-plane",
+			name: "low Cost",
+			description: "Amazing new frustration. New infer anger or amazing new frustration. The color red can infer amazing new frustration. Amazing new frustration. New infer anger or amazing new frustration. The color red can infer amazing new frustration."
+		},
+		{
+			id: 3,
+			icon: "li-graph",
+			name: "Your Controll",
+			description: "Color red can infer anger or amazing new frustration. amazing new The color red can infer anger or new frustration. Color red can infer anger or amazing new frustration. amazing new The color red can infer anger or new frustration."
+		},
+	]
+
 	$scope.animation = {};
 	$scope.animation.current = 'fadeInUp';
 	$scope.animation.previous = $scope.animation.current;

@@ -122,11 +122,30 @@ p{
     color: #247c26;
     background: none;
 }
+.secondary-button-white{
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #fff;
+    font-family: "catamaranlight";
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #247c26;
+    padding: 10px 30px;
+    display: inline-block;
+    line-height: 36px;
+    height: 60px;
+}
+.secondary-button-white:hover{
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+}
+
 .primary-button:focus{
     color: inherit; 
 }
 .primary-button-onBlack:hover{
-    background: rgba(255, 255, 255, 0.7); 
+    background: rgba(255, 255, 255, 1); 
+    border-color: #fff;
     color: #247c26!important;
 }
 .transparent-button{
@@ -144,6 +163,36 @@ p{
     background: rgba(255, 255, 255, 0.7); 
     color: #247c26;
 }
+.custom-checkbox-squire{
+padding-left: 25px;
+position: relative;
+}
+.custom-checkbox-squire.selected-pm span{
+background: url(../img/check-mark.png) no-repeat 1px 1px;
+-webkit-transition: all 0ms ease-in-out;
+-moz-transition: all 0ms ease-in-out;
+-ms-transition: all 0ms ease-in-out;
+-o-transition: all 0ms ease-in-out;
+transition: all 0ms ease-in-out;
+}
+
+.custom-checkbox-squire span{
+position: absolute;
+border: 1px solid #247c26;
+left: 2px;
+top: 10px;
+width: 15px;
+border-radius: 0;
+height: 15px;
+}
+.custom-checkbox-squire i{
+text-align: left;
+font-style: normal;
+}
+.custom-checkbox span input[type="checkbox"] {
+    opacity: 0;
+}
+
 /*Header section css start*/
 header{
     background: rgba(255, 255, 255, 0.9); 
@@ -228,8 +277,22 @@ header{
 .video-banner-caption .transparent-button{
     margin-top: 40px;
 }
-.about-us-image img{
-    width: 100%;
+#about-us{
+background: #247c26;
+}
+.about-us-image {
+background: url(../img/thumb-image-01.jpg) no-repeat center center;
+padding-left: 0;
+height: 400px;
+background-size: 102%;
+overflow: hidden;
+}
+.about-us-content {
+width: 600px;
+max-width: 100%;
+padding-top: 58px;
+float: left;
+padding-left: 30px;
 }
 #pageTitle{
     background: url(../img/binate-page-title-bg.jpg) repeat bottom center;
@@ -599,14 +662,14 @@ header{
     height: 100%;
 }
 .responsive-menu-icon a{
-    background: #fff;
+    background: #247c26;
     display: inline-block;
     height: 100%;
     line-height: 72px;
     width: auto;
     font-size: 30px;
     padding: 20px 15px;
-    color: #247c26;
+    color: #fff;
 }
 .responsive-menu-icon a ng-md-icon {
     height: auto;
@@ -649,12 +712,29 @@ header{
     color: #000;
     text-align: left;
 }
-
-
-
+.about-us-image{
+    display: none;
+}
+.about-us-content{
+    float: none;
+    width: 100%;
+    display: block;
+    padding-bottom: 40px;
+}
+#career{
+    background: none;
+}
+#services {
+    background-size: initial;
+}
+.about-us-content {
+    padding: 40px 30px;
+}
 }
 @media (max-width: 769px) {
-
+.video-banner-caption span.heading-01 {
+    font-size: 20px;
+}
 } 
 @media (max-width: 320px) {
 
@@ -663,7 +743,42 @@ header{
 
 } 
 @media (max-width: 480px) {
-
+.video-banner-caption {
+    margin: 120px 0 50px 0;
+}
+.transparent-button{
+font-size: 22px;
+padding: 10px 70px;
+}
+.caption-text { 
+font-size: 21px; 
+padding: 180px 30px 0 30px;
+line-height: 30px;
+}
+.phone-number {
+    font-size: 28px;
+}
+.phone-number i {
+    display: block;
+}
+.service-section h3{
+    font-size: 30px;
+}
+.copy-right{
+    float: none!important;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social-icons{
+    float: none!important;
+    text-align: center;
+}
+.address {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 }
 @media (max-width: 667px) {
 
