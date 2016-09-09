@@ -100,6 +100,9 @@ p{
 .padding-50-0{
     padding: 50px 0;
 }
+.padding-top-50{
+    padding-top: 50px;
+}
 .not-visible {
     visibility: hidden;
 }
@@ -499,6 +502,10 @@ padding-left: 30px;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
+.custom-file-field{
+    padding: 10px;
+    height: 45px;
+}
 .custom-textarea{
     padding: 5px 10px;
     background: #fff;
@@ -542,6 +549,74 @@ padding-left: 30px;
 .list-style-none ul{
     padding-left: 25px;
 }
+.content-row{
+    
+}
+.left-cell{
+    float: left;
+    text-align: right;
+    padding-bottom: 20px;
+    width: 36%;
+}
+.left-cell h5{
+    font-size: 20px;
+    margin-top: 0;
+}
+.right-cell{
+    float: right;
+    width: 60%;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border-left: 1px solid #247c26;
+}
+.right-cell h5{
+    font-size: 20px;
+    margin-top: 0;
+}
+.custom-list ul{
+    padding-left: 0;
+}
+.custom-list ul li{
+    background: url(../img/list-bullet.png) no-repeat left 9px;
+    background-size: 8px;
+    list-style: none;
+    font-family: 'catamaranlight';
+    font-size: 17px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.inner-subtitle{
+    padding: 40px 0;
+    background: #247c26;
+    color: #fff;
+}
+.circulr-detaels-bottom{
+    border-top: 1px solid #247c26;
+}
+.apply-now a{
+    margin-left: 360px;
+}
+.side-nav-right{
+    text-align: right;
+}
+.side-nav-right ul {
+    padding-left: 0;
+}
+.side-nav-right ul li{
+    font-family: 'catamaranlight';
+    font-size: 22px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.side-nav-right ul li a{
+    color: #247c26;
+    display: block;
+    text-align: right;
+}
+.side-nav-right ul li a:hover{
+    color: #000;
+}
+
 
 
 /*Footer css start*/

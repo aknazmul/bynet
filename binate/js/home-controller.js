@@ -7,12 +7,12 @@ app.controller('homeController', [ '$rootScope', '$document', '$scope', function
 	$scope.bannerImages = [
       {
         img: "img/binate-banner-01.jpg",
-        title1: "Entering a new era of transformations, we refocus energies towards ‘Creating memorable digital experiences everyday’ for our customers. ",
+        title1: "Entering a new era of transformations, we refocus energies towards ‘Creating memorable digital experiences everyday for our customers. ",
 		captionAlign:"right-align"
       },
 			{
         img: "img/binate-banner-02.jpg",
-        title1: "Our clients’ priorities drive our business focus. They depend on Binate's industry knowledge to help  solve the toughest of problems. For us, “good enough” is not enough.",
+        title1: "Our client’s priorities drive our business focus. They depend on Binate's industry knowledge to help  solve the toughest of problems. For us, “good enough” is not enough.",
 		captionAlign:"right-align"
       },
 			{

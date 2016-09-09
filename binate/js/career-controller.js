@@ -8,7 +8,7 @@ app.controller('careerController', [ '$rootScope', '$document', '$scope', functi
 			id: 1,
 			name: "Software Engineer (Magento)",
 			description: "We are currently seeking 5 full-time, on-site Magento developer to join our team for Minneapolis, MN. Duties would primarily consist of developing new projects built using the Magento platform, writing custom extensions, identifying quality community extensions, and architecting new Magento bids. Applicants will be expected to provide examples of work, if available, and may be asked to complete a coding challenge.",
-			link: "magent.html",
+			link: "magento.html",
 			experience: "3 to 5 years",
 			deadline: "Open"
 		},
