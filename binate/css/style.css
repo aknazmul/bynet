@@ -301,6 +301,10 @@ padding-left: 30px;
     background: url(../img/binate-page-title-bg.jpg) repeat bottom center;
     background-size: cover;
 }
+#pageTitle-career{
+    background: url(../img/career-banner-bg.jpg) repeat bottom center;
+    background-size: cover;
+}
 .page-title-inner {
     padding: 120px 0 30px 0;
 }
@@ -447,10 +451,10 @@ padding-left: 30px;
     font-size: 31px;
     line-height: 60px;
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 .phone-number{
-    font-size: 48px;
+    font-size: 43px;
 }
 .phone-number i{
     font-size: 60px;
@@ -503,8 +507,9 @@ padding-left: 30px;
     transition: all 0.4s ease-in-out;
 }
 .custom-file-field{
-    padding: 10px;
-    height: 45px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    padding: 0;
 }
 .custom-textarea{
     padding: 5px 10px;
@@ -535,6 +540,9 @@ padding-left: 30px;
     cursor: pointer;
     font-size: 20px;
     font-weight: normal;
+}
+.dialog_header h2{
+    line-height: 45px;
 }
 .dialog-list {
     margin-bottom: 20px;
@@ -590,11 +598,14 @@ padding-left: 30px;
     background: #247c26;
     color: #fff;
 }
-.circulr-detaels-bottom{
-    border-top: 1px solid #247c26;
+.circulr-detaels-bottom{ 
+    background: #eee;
 }
-.apply-now a{
-    margin-left: 360px;
+.apply-now{
+    text-align: center;
+}
+.apply-now p{
+    margin-top: 10px;
 }
 .side-nav-right{
     text-align: right;
@@ -605,16 +616,22 @@ padding-left: 30px;
 .side-nav-right ul li{
     font-family: 'catamaranlight';
     font-size: 22px;
-    margin-bottom: 15px;
     list-style: none;
 }
 .side-nav-right ul li a{
+    /*border-bottom: 1px  solid #fff;*/
     color: #247c26;
     display: block;
+    padding: 8px 10px;
     text-align: right;
 }
 .side-nav-right ul li a:hover{
-    color: #000;
+    color: #fff;
+    background: #247c26;
+}
+.side-nav-right ul li a.active{
+    color: #fff;
+    background: #247c26;
 }
 
 
@@ -631,8 +648,7 @@ padding-left: 30px;
 .social-icons{
     text-align: right;
 }
-.social-icons a { 
-    background: #222;
+.social-icons a {
     border-radius: 100px;
     color: #fff;
     display: inline-block;
@@ -645,7 +661,13 @@ padding-left: 30px;
 }
 .social-icons a:hover{ 
     background: #fff;
-    color: #247c26;
+    color: #3c5a99;
+}
+.social-icons .linkedin{
+    background: #1f88bd;
+}
+.social-icons .facebook{
+    background: #3c5a99;
 }
 /*Footer css end*/
 
@@ -653,7 +675,7 @@ padding-left: 30px;
 
 /*Banner css strat*/
 .banner-section {
-    height: 550px;
+    height: 450px;
     position: relative;
     background: #000;
     overflow: hidden;
@@ -680,7 +702,7 @@ padding-left: 30px;
     text-align: center; 
     width: 1000px;
     max-width: 100%;
-    padding-top: 250px;
+    padding-top: 130px;
     line-height: 45px;
     margin: 0 auto 30px auto;
 }
@@ -725,6 +747,23 @@ padding-left: 30px;
 
 
 /*Media qurey start*/
+
+@media (max-width: 1920px){
+.banner-section {
+    height: 700px;
+} 
+.caption-text {
+    padding-top: 230px; 
+}
+}
+@media (max-width: 1370px){
+.banner-section {
+    height: 450px;
+} 
+.caption-text {
+    padding-top: 110px; 
+}
+}
 @media (max-width: 1024px) {
 
 }
