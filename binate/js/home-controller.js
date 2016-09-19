@@ -1,7 +1,7 @@
 'use strict';
 
 
-app.controller('homeController', [ '$rootScope', '$document', '$scope', function ($rootScope, $document, $scope) {
+app.controller('homeController', [ '$rootScope', '$document', '$scope', '$timeout', '$q', 'ngDialog', function ($rootScope, $document, $scope, $timeout, $q, ngDialog) {
 
 	  
 	$scope.bannerImages = [
@@ -12,12 +12,12 @@ app.controller('homeController', [ '$rootScope', '$document', '$scope', function
       },
 			{
         img: "img/binate-banner-02.jpg",
-        title1: "Our client’s priorities drive our business focus. They depend on Binate's industry knowledge to help  solve the toughest of problems. For us, “good enough” is not enough.",
+        title1: "Our client’s priorities drive our business focus. Binate's industry knowledge helps solve the toughest problems. For us, “good enough” is not enough.",
 		captionAlign:"right-align"
       },
 			{
         img: "img/binate-banner-03.jpg",
-        title1: "we can deliver 25% efficiency gains in the first 12 to 18 months of a client relationship versus waiting for savings in the off years.",
+        title1: "we can deliver 25% - 30% efficiency gains in the first 6 to 12 months of a client relationship versus waiting for savings in the off years.",
 		captionAlign:"left-align"
       }      
     ];
@@ -82,5 +82,14 @@ app.controller('homeController', [ '$rootScope', '$document', '$scope', function
 	};
 
 
+
+	//Application Form
+    $scope.teamqueryModal = function () {
+        ngDialog.open({
+            template: 'queryModal',
+            controller: 'homeController',
+            className: 'ngdialog-theme-default'
+        });
+    };
 
 }]); 

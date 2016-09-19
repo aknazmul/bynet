@@ -1,8 +1,8 @@
 'use strict';
 
 
-app.controller('careerController', [ '$rootScope', '$document', '$scope', function ($rootScope, $document, $scope) {
- 
+app.controller('careerController', [ '$rootScope', '$document', '$scope', 'ngDialog', function ($rootScope, $document, $scope, ngDialog) {
+  
 	$scope.jobCirculars = [
 		{
 			id: 1,
@@ -36,7 +36,18 @@ app.controller('careerController', [ '$rootScope', '$document', '$scope', functi
 			experience: "At least 3 years ",
 			deadline: "Open"
 		}
-	]
+	];
 
+	$scope.positions = ['Software Engineer (Magento)', 'QA/ Software Developer', 'Software Engineer (Java)', 'Software Engineer (Python/Django)'];
+
+
+	//Application Form
+    $scope.appliactionFormModal = function () {
+        ngDialog.open({
+            template: 'applicationForm',
+            controller: 'careerController',
+            className: 'ngdialog-theme-default'
+        });
+    };
 
 }]); 

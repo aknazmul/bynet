@@ -74,7 +74,7 @@
         <div class="body-container" ng-controller="careerController">
               
 
-            <section id="pageTitle">
+            <section id="pageTitle-career">
                 <article class="transperent-bg">
                     <div class="container page-title-inner">
                         <div class="col-md-12 center-align"> 
@@ -174,24 +174,29 @@
                                     <p>We are working on a comprehensive SaaS based e-commerce environment. The largest telecom operator in the Netherlands, some big fashion brands, and we even serve a few startups, who are using it. Currently the system is running in over 2000 retail stores.</p>
                                 </div>
                                 <div class="clear"></div>
-                            </div>
-                            
-                            <div class="content-row">
-                                <div class="left-cell">
-                                    <h5 class="primary-color">Salary Range</h5>
-                                </div>
-                                <div class="right-cell">
-                                    <p>Commensurate with experience and track record</p>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
+                            </div> 
                             
                             <div class="content-row">
                                 <div class="left-cell">
                                     <h5 class="primary-color">Job Location</h5>
                                 </div>
                                 <div class="right-cell">
-                                    <h5 class="primary-color">Dhaka</h5>
+                                    <h5 class="primary-color">Dhaka, Bangladesh</h5>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <div class="content-row">
+                                <div class="left-cell">
+                                    <h5 class="primary-color">Salary</h5>
+                                </div>
+                                <div class="right-cell">
+                                    <div class="custom-list">
+                                     <ul>
+                                         <li>Commensurate with experience and track record</li>
+                                         <li>Salary review in each 6 months with performance.</li>
+                                     </ul>
+                                 </div>
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -203,10 +208,9 @@
                                 <div class="right-cell">
                                     <div class="custom-list">
                                      <ul>
-                                         <li>Compensation package will be competitive, and commensurate with experience and track record</li>
                                          <li>Provident Fund facility</li>
                                          <li>Festive Bonus</li>
-                                         <li>Lunch &amp; Refreshment facility</li>
+                                         <li>Breakfast, Lunch &amp; Refreshment facility</li>
                                          <li>Lots of trainings and courses on our expense !!</li>
                                      </ul>
                                  </div>
@@ -248,17 +252,17 @@
                             <p class="heading-04">Let's build the future together with apply now.</p>
                         </div>
                         <div class="col-md-4 apply-now">
-                            <a href="javascript:void(0)" class="primary-button" ng-click="teamqueryModal()">Apply Now</a>
+                            <a href="javascript:void(0)" class="primary-button" ng-click="appliactionFormModal()">Apply Now</a>
                         </div>
                     </div>
                 </article>
             </section>
             
             <!-- Templates -->
-            <script type="text/ng-template" id="queryModal">
+            <script type="text/ng-template" id="applicationForm">
                 <div class="dialog_header">
                     <div class="col-md-12 margin-bottom-30">
-                        <h2>You are applying  as a <span class="primary-color">Software Engineer (Python/Django)</span></h2>
+                        <h2>Apply now</h2>
                     </div>
                 </div>
                 <div class="dialog-content">
@@ -267,6 +271,10 @@
                         <div class="col-md-6">
                             <input type="text" class="custom-field width-block" placeholder="Full Name">
                         </div>
+                        <div class="col-md-6">
+                            <div custom-select="f for f in positions | filter: $searchTerm" ng-model="position" autofocus></div>
+                        </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="field-row">
                         <div class="col-md-6">
@@ -275,26 +283,31 @@
                         <div class="col-md-6">
                             <input type="text" class="custom-field width-block" placeholder="Phone Number">
                         </div>
+                        <div class="clear"></div>
                     </div> 
                     <div class="field-row">
                         <div class="col-md-12">
                             <textarea class="custom-textarea" placeholder="Message" ></textarea>
                         </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="field-row">
-                        <div class="col-md-6">
-                            <p>Attach your CV as a DOC or PDF format.</p>
+                        <div class="col-md-12">
+                            <p>Attach your Resume, Forwarding letter and Photography.</p>
+                            <div class="attached-files">
+                                <p><i class="fa fa-file"></i>attached-resume.pdf <span class="primary-color"> (110kb)</span> <ng-md-icon icon="close" size="20" class="remove"></ng-md-icon></p>
+                                <p><i class="fa fa-file"></i>attached-forwarding-letter.docx <span class="primary-color">(250kb)</span> <ng-md-icon icon="close" size="20" class="remove"></ng-md-icon></p>
+                                <p><i class="fa fa-file"></i>attached-photography.jpg <span class="primary-color">(85kb)</span> <ng-md-icon icon="close" size="20" class="remove"></ng-md-icon></p>
+                            </div>
                             <input type="file" class="custom-field custom-file-field width-block">
-                        </div> 
-                        <div class="col-md-6">
-                            <p>Also attach your Photography.</p>
-                            <input type="file" class="custom-field custom-file-field width-block">
-                        </div> 
+                        </div>
+                        <div class="clear"></div>
                     </div> 
                      <div class="field-row">
                          <div class="col-md-12 ">
                              <button type="submit" class="primary-button pull-right" >Submit</button>
                          </div>
+                         <div class="clear"></div>
                      </div>
 
                     <div class="clear"></div>
@@ -344,6 +357,9 @@
         <!--Footer start-->
     </div>
 
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="js/angular.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/angular-animate.js"></script>
@@ -358,6 +374,7 @@
     <script type="text/javascript" src="js/angular-carousel.js"></script>
     <script type="text/javascript" src="js/match-media.js"></script> 
     <script type="text/javascript" src="js/career-controller.js"></script> 
+    <script type="text/javascript" src="js/customSelect.js"></script>
 
 </body>
 

@@ -68,14 +68,7 @@ app.controller('mainCtrl', ['$rootScope', 'ngDialog', '$document', '$timeout', '
         });
     };
 
-    //query details
-    $scope.teamqueryModal = function () {
-        ngDialog.open({
-            template: 'queryModal',
-            controller: 'InsideCtrl',
-            className: 'ngdialog-theme-default'
-        });
-    };
+    
 
     //about us details
     $scope.aboutDetailsView = function () {
