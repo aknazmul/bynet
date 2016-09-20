@@ -7,7 +7,7 @@ app.controller('homeController', [ '$rootScope', '$document', '$scope', '$timeou
 	$scope.bannerImages = [
       {
         img: "img/binate-banner-01.jpg",
-        title1: "Entering a new era of transformations, we refocus energies towards ‘Creating memorable digital experiences everyday for our customers. ",
+        title1: "Entering a new era of transformations, we refocus energies towards “Creating memorable digital experiences everyday” for our customers.",
 		captionAlign:"right-align"
       },
 			{

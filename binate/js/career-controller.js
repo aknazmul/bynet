@@ -14,7 +14,7 @@ app.controller('careerController', [ '$rootScope', '$document', '$scope', 'ngDia
 		},
 		{
 			id: 2,
-			name: "QA/ Software Developer",
+			name: "Software Engineer (QA)",
 			description: "We're looking for a Software Engineer (QA) to join our core team. Write extensive unit test covering corner cases. Need depth Knowledge in Python/Ruby/Javascript/Java",
 			link: "qa.html",
 			experience: "At least 2 year(s)",
@@ -38,7 +38,7 @@ app.controller('careerController', [ '$rootScope', '$document', '$scope', 'ngDia
 		}
 	];
 
-	$scope.positions = ['Software Engineer (Magento)', 'QA/ Software Developer', 'Software Engineer (Java)', 'Software Engineer (Python/Django)'];
+	$scope.positions = ['Software Engineer (Magento)', 'Software Engineer (QA)', 'Software Engineer (Java)', 'Software Engineer (Python/Django)'];
 
 
 	//Application Form
