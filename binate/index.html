@@ -266,56 +266,183 @@
                                     <div class="clear"></div>
                                 </div> 
                                 <div class="field-row">
+                                    <div class="col-md-12"><p class="margin-bottom-10 heading-05">Preferred technologies:</p></div>
+                                    <div class="col-md-6 check-boxarea preferred-technology"> 
+                                        <a href="javascript:void(0)" class="dropdown-custom dropdown-btn" ng-click="open = !open; openTwo = false">Select Technologies
+                                            <ng-md-icon icon="keyboard_arrow_down" size="25"></ng-md-icon>
+                                        </a>
+                                        
+                                        <div class="dropdown-list dropdown-panel" ng-class="{expanded: open, collapsed: !open}">
+                                            <input type="text" placeholder="Search Technology" class="auto-complete-search" />
+                                            <p> 
+                                                <label class="custom-checkbox custom-checkbox-squire {{ NET ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="NET" /></span>
+                                                    <i>.NET</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Ajax ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Ajax" /></span>
+                                                    <i>Ajax</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ CSS ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="CSS" /></span>
+                                                    <i>CSS</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Delphi ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Delphi" /></span>
+                                                    <i>Delphi</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Flash ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Flash" /></span>
+                                                    <i>Flash</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ JSP ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="JSP" /></span>
+                                                    <i>JSP</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Java ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Java" /></span>
+                                                    <i>Java</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Drupal ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Drupal" /></span>
+                                                    <i>Drupal</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ MySQL ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="MySQL" /></span>
+                                                    <i>MySQL</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ PHP ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="PHP" /></span>
+                                                    <i>PHP</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Python ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Python" /></span>
+                                                    <i>Python</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ VB ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="VB" /></span>
+                                                    <i>VB</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ XML ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="XML" /></span>
+                                                    <i>XML</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ F ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="F" /></span>
+                                                    <i>F#</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Share_Point ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Share_Point" /></span>
+                                                    <i>Share Point</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ ASP ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="ASP" /></span>
+                                                    <i>ASP</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ C_C_plus_plus ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="C_C_plus_plus" /></span>
+                                                    <i>C/C++</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Cfusion ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Cfusion" /></span>
+                                                    <i>Cfusion</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ DHTML ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="DHTML" /></span>
+                                                    <i>DHTML</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Flex ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Flex" /></span>
+                                                    <i>Flex</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Javascript ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Javascript" /></span>
+                                                    <i>Javascript</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Joomla ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Joomla" /></span>
+                                                    <i>Joomla</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ MS_SQL ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="MS_SQL" /></span>
+                                                    <i>MS SQL</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Oracle ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Oracle" /></span>
+                                                    <i>Oracle</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Perl_CGI ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Perl_CGI" /></span>
+                                                    <i>Perl/CGI</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Scripts ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Scripts" /></span>
+                                                    <i>Scripts</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ XHTML ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="XHTML" /></span>
+                                                    <i>XHTML</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ C_sharp ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="C_sharp" /></span>
+                                                    <i>C#</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Objective_C ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Objective_C" /></span>
+                                                    <i>Objective C</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Ruby_on_Rails ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Ruby_on_Rails" /></span>
+                                                    <i>Ruby on Rails</i>
+                                                </label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 check-boxarea preferred-technology">
+
+                                        <a href="javascript:void(0)" class="dropdown-custom2 dropdown-btn" ng-click="openTwo = !openTwo; open = false">Select Technologies:
+                                            <ng-md-icon icon="keyboard_arrow_down" size="25"></ng-md-icon>
+                                        </a>
+                                             
+                                        <div class="dropdown-list dropdown-panel2" ng-class="{expanded: openTwo, collapsed: !openTwo}">
+                                            <input type="text" placeholder="Search Technology" class="auto-complete-search" />
+                                            <p> 
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Android ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Android" /></span>
+                                                    <i>Android</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Windows_Mobile ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Windows_Mobile" /></span>
+                                                    <i>Windows Mobile</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Symbian ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Symbian" /></span>
+                                                    <i>Symbian</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Apple ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Apple" /></span>
+                                                    <i>Apple</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Blackberry ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Blackberry" /></span>
+                                                    <i>Blackberry</i>
+                                                </label>
+                                                <label class="custom-checkbox custom-checkbox-squire {{ Palm_OS ? 'selected-pm' : '' }}">
+                                                    <span><input type="checkbox" ng-model="Palm_OS" /></span>
+                                                    <i>Palm OS</i>
+                                                </label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="field-row">
                                     <div class="col-md-12">
                                         <textarea class="custom-textarea" placeholder="Message" ></textarea>
                                     </div>
                                     <div class="clear"></div>
-                                </div>
-
-                                <div class="field-row check-boxarea">
-                                    <div class="col-md-12 preferred-technology">
-                                        <p class="heading-06">Preferred technologies:</p>
-                                        <p class="margin-bottom-0"> 
-                                            <label class="custom-checkbox custom-checkbox-squire {{ Python ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="Python" /></span>
-                                                <i>Python</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ Django ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="Django" /></span>
-                                                <i>Django</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ Angularjs ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="Angularjs" /></span>
-                                                <i>Angularjs</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ Java ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="Java" /></span>
-                                                <i>Java</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ C ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="C" /></span>
-                                                <i>C</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ C_plus_plus ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="C_plus_plus" /></span>
-                                                <i>C++</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ Net ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="Net" /></span>
-                                                <i>.Net</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ PHP ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="PHP" /></span>
-                                                <i>PHP</i>
-                                            </label>
-                                            <label class="custom-checkbox custom-checkbox-squire {{ Magento ? 'selected-pm' : '' }}">
-                                                <span><input type="checkbox" ng-model="Magento" /></span>
-                                                <i>Magento</i>
-                                            </label>
-                                        </p>
-                                    </div> 
-                                    <div class="clear"></div>
-                                </div>
+                                </div> 
+ 
 
                                  <div class="field-row">
                                      <div class="col-md-12 ">

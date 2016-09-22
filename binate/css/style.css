@@ -175,13 +175,11 @@ position: relative;
 }
 .custom-checkbox-squire.selected-pm span{
 background: url(../img/check-mark.png) no-repeat 1px 1px;
--webkit-transition: all 0ms ease-in-out;
--moz-transition: all 0ms ease-in-out;
--ms-transition: all 0ms ease-in-out;
--o-transition: all 0ms ease-in-out;
-transition: all 0ms ease-in-out;
+color: #247c26;
 }
-
+.custom-checkbox-squire.selected-pm{
+color: #247c26;
+}
 .custom-checkbox-squire span{
 position: absolute;
 border: 1px solid #247c26;
@@ -519,7 +517,7 @@ padding-left: 30px;
 }
 .check-boxarea label{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
 }
 .dialog_header h2{
@@ -628,11 +626,80 @@ padding-left: 30px;
     cursor: pointer;
 }
 .preferred-technology{
-    padding-top: 10px;
+    position: relative;
 }
 .preferred-technology .custom-checkbox {
-    margin-right: 15px;
-    display: inline-block;
+    display: block;
+    padding: 0px 5px 5px 35px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+}
+.preferred-technology .custom-checkbox-squire span{
+    left: 10px;
+    border-color: #ccc;
+}
+.preferred-technology .custom-checkbox:hover {
+    color: #247c26
+}
+.preferred-technology .custom-checkbox.selected-pm {
+    color: #247c26
+}
+.dropdown-btn{
+    background: #fff;
+    width: 100%;
+    color: #777!important;
+    font-family: "catamaranlight";
+    border: 1px solid #ddd;
+    display: block;
+    font-size: 17px;
+    padding: 8px 10px;
+}
+.dropdown-btn ng-md-icon{
+    float: right;
+}
+.dropdown-list { 
+    background: #fff;
+    color: #444;
+    font-size: 17px;
+    z-index: 999; 
+    position: absolute;
+    top: 97.8%; 
+     overflow-x: auto;
+    left: 15px;
+    width: 91.8%;
+    box-shadow: 3px 2px 8px 0px #ddd;
+    border: 1px solid #ddd;
+}
+.dropdown-list.collapsed {
+    height: 0px;
+    border: none;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.dropdown-list.expanded {
+    height: auto;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+} 
+.dropdown-list p{
+    padding: 10px 0;
+    margin: 0;
+    height: 200px; 
+    overflow-x:auto;
+}
+.auto-complete-search{
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 10px 0 0 0;
 }
 
 
@@ -919,17 +986,6 @@ line-height: 30px;
 }
 /*Media qurey end*/
  
- 
-
-
-
-
-
-
-
-
-
-
 
  .custom-select {
 	position: relative;
@@ -1102,3 +1158,4 @@ line-height: 30px;
 	border-radius: 0;
 	background-image: none;
 }
+
